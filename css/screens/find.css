@@ -1,0 +1,113 @@
+.find-screen {
+  padding: 0 var(--horizontal-space);
+  margin: 20px;
+}
+.screen-header__icon {
+  position: relative;
+  background-color: teal;
+}
+.nav__setting-alarm {
+  position: absolute;
+  right: 100px;
+  top: 100px;
+}
+
+.recommended-friends {
+  border-top: var(--main-border);
+  border-bottom: var(--main-border);
+  margin: 25px 0;
+  padding: 25px 0;
+}
+.recommended-friends__title {
+  font-size: 13px;
+  color: var(--gray-color);
+}
+.recommended-friends span {
+  display: block;
+  margin: 110px 0;
+  text-align: center;
+  font-size: 16px;
+  color: var(--gray-color);
+}
+.open-chat {
+  color: var(--gray-color);
+}
+.open-chat__header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-bottom: 25px;
+}
+.open-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+.open-post__title {
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: rgba(0,0,0,0.7);
+}
+.open-post__hashtags {
+  text-transform: uppercase;
+}
+.open-post__members {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+.open-post__members img {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  margin-right: 3px;
+}
+.open-post__members img {
+  font-size: 13px;
+}
+.open-post__members .divider {
+  width: 1px;
+  height: 12px;
+  background-color: var(--gray-color);
+  margin: 0 5px;
+}
+.open-post__member-status {
+  color: #ffb0e0;
+}
+.open-post__photo {
+  position: relative;
+}
+.open-post__photo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+}
+.open-post__like-count {
+  font-size: 13px;
+  padding: 4px;
+  background-color: rgba(0,0,0,.55);
+  color: rgba(255,255,255,.8);
+  border-radius: 12px;
+  align-items: center;
+  position: absolute;
+  bottom: 8px;
+  right: 5px;
+}
+
+@keyframes heartBeat {
+  0% {
+  
+  } 50% {
+    color: tomato;
+    transform: scale(1.3);
+  } 100% {
+
+  }
+}
+
+.open-post__photo:hover i {
+  will-change: transform;
+  animation: heartBeat .5s ease-in-out infinite;
+}
+
